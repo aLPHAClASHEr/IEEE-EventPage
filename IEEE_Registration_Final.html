@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>ic-ETITE'20 | Registration</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        .table {
+            width: 900px;
+            justify-content: space-around;
+            border: 2px solid #000;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        
+        .main {
+            background-image: url("https://vit.ac.in/sites/all/themes/vittheme/images/about_banner.jpg");
+            color: white;
+            background-size: 1590px;
+            font-size: 8px;
+            margin-top: 0px;
+            padding-left: 60px;
+            padding-top: 160px;
+            padding-bottom: 180px;
+        }
+        
+        .me {
+            font-family: Arial Black;
+            font-size: 30px;
+            color: #fff;
+            text-transform: uppercase;
+            padding-left: 8px;
+        }
+        
+        .my {
+            color: #141A2E;
+            font-family: Bahnschrift SemiConden;
+            font-size: 40px;
+        }
+        
+        .name-top {
+            text-align: center;
+            font-family: Bahnschrift Condensed;
+            font-size: 29px;
+        }
+        
+        .top-images {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .top-left {
+            cursor: pointer;
+            height: 120px;
+            width: 400px;
+            border: 5px solid white;
+            padding-top: 15px;
+            padding-bottom: 10px;
+            margin-right: 40px;
+            padding-right: 90px;
+            padding-left: 80px;
+        }
+        
+        .top-left:hover {
+            transition: at ease 0.5s;
+            box-shadow: 3px 3px 8px #064746;
+        }
+        
+        .top-right {
+            cursor: pointer;
+            width: 350px;
+            height: 120px;
+            border: 5px solid white;
+            /*padding-top: 40px;
+        padding-bottom: 30px;*/
+            padding-right: 100px;
+            padding-left: 70px;
+        }
+        
+        .top-right:hover {
+            transition: at ease 0.5s;
+            box-shadow: 3px 3px 8px #064746;
+        }
+        
+        .bottom-images {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .Img1 {
+            height: auto;
+            width: 250px;
+            padding-left: 60px;
+            padding-right: 60px;
+            padding-top: 5px;
+            padding-bottom: 3px;
+            margin-right: 20px;
+            border: 5px solid white;
+        }
+        
+        .Img1:hover {
+            transition: at ease 0.5s;
+            box-shadow: 3px 3px 8px #064746;
+        }
+        
+        .Img2 {
+            height: auto;
+            width: 250px;
+            padding-left: 50px;
+            padding-right: 50px;
+            margin-right: 30px;
+            margin-left: 17px;
+            border: 5px solid white;
+        }
+        
+        .Img2:hover {
+            transition: at ease 0.5s;
+            box-shadow: 3px 3px 8px #064746;
+        }
+        
+        .Img3 {
+            height: auto;
+            width: 255px;
+            padding-right: 65px;
+            padding-left: 65px;
+            margin-left: 10px;
+            border: 5px solid white;
+        }
+        
+        .Img3:hover {
+            transition: at ease 0.5s;
+            box-shadow: 3px 3px 8px #064746;
+        }
+        
+        .sponsors {
+            background-color: lightgray;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        
+        body {
+            margin: 0px;
+            padding: 0px;
+            font: Arial;
+        }
+        
+        #main {
+            width: 100%;
+            height: 100px;
+            position: sticky;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            top: 1px;
+            padding-bottom: 40px;
+            right: 0;
+            left: 0;
+            width: 100%;
+            background-color: white;
+            box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .logo img {
+            height: 70px;
+            padding-top: 20px;
+            margin-left: -100px;
+        }
+        
+        .menu {
+            list-style: none;
+            /*remove the bullets from the list*/
+            display: flex;
+            padding-top: 20px;
+            padding-left: 10px;
+        }
+        
+        .menu li a {
+            height: 40px;
+            line-height: 53px;
+            margin: 0.5px;
+            text-decoration: none;
+            padding: 0px 10px;
+            display: flex;
+            font-size: 1em;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            color: black;
+        }
+        
+        .hey img {
+            height: 75px;
+            width: 230px;
+            padding-top: 25px;
+            padding-left: 50px;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        .gif img {
+            width: 80px;
+            height: 80px;
+            margin-left: 40px;
+            padding-top: 20px;
+        }
+        
+        .menu li a:hover {
+            color: #EF3C43;
+            transition: all ease-in-out 0.5s;
+        }
+        
+        .ending {
+            background-color: #141a2e;
+            display: flex;
+            padding-top: 110px;
+            justify-content: space-around;
+        }
+        
+        .ending-img {
+            height: 51.26px;
+            width: 200px;
+        }
+        
+        .lowest {
+            background-color: #141a2e;
+            color: grey;
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 40px;
+        }
+        
+        .social-media {
+            justify-content: center;
+            padding-right: 250px;
+            padding-top: 0;
+        }
+        
+        .like {
+            background-color: #141a2e;
+            font-family: Bahnschrift Condensed;
+        }
+        
+        .TAMIL {
+            color: #ea0763;
+            width: 300px;
+            height: 30px;
+            padding-right: 37px;
+        }
+        
+        .INDIA {
+            color: #ea0763;
+            width: 300px;
+            height: 30px;
+        }
+        
+        h6 {
+            width: 330px;
+            height: 30px;
+            text-transform: uppercase;
+            color: #fff;
+            margin-bottom: 25px;
+            font-size: 20px;
+            font-weight: 700;
+        }
+        
+        p {
+            width: 296px;
+            height: 43px;
+        }
+        
+        p a {
+            text-decoration: none;
+        }
+        
+        .reserve {
+            padding-left: 150px;
+            width: 750px;
+            height: 24px;
+            padding-top: 5px;
+            padding-bottom: 20px;
+        }
+        
+        .text3 a:hover {
+            color: #ea0763;
+        }
+        
+        .vellore:hover {
+            color: #EF3C43;
+            text-decoration: none;
+        }
+        
+        .vellore {
+            color: grey;
+            padding-left: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="main">
+        <nav>
+            <a href="#" class="logo">
+                <img src="https://vit.ac.in/icetite/img/icetite-bw.png" alt="logo">
+            </a>
+            <a href="#" target="_blank" class="gif"><img src="https://vit.ac.in/icetite/img/gif.gif" /></a>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Authors</a></li>
+                <li><a href="#" style="color:#EF3C43">Registration</a></li>
+                <li><a href="#">Speaker</a></li>
+                <li><a href="#">Committe</a></li>
+                <li><a href="#">Sponsorship</a></li>
+                <li><a href="#">Visa</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <a href="#" class="hey"><img src="https://vit.ac.in/icetite/img/vit_logo-2.jpg" target="_blank" /></a>
+        </nav>
+    </section>
+    <center>
+        <div class="main">
+            <h2 class="me"><strong><strong>REGISTRATION</strong></strong>
+            </h2>
+            <h4><a href="https://vit.ac.in/icetite/registration.html#" target="_blank" style="color: white; text-decoration: none"><b>Home</b></a><b> / Registration</b></h4>
+
+        </div>
+        <br><br>
+        <h2 class="my" style="color:#11264B"><strong>Registration Details</strong></h2>
+        <img src="https://vit.ac.in/icetite/img/home/section-style.png" style="width:113px;height:18px">
+        <br><br><br><br><br>
+        <table border="1px" class="table">
+            <tr>
+                <th scope="col" style="width:250px">Category</th>
+                <th scope="col" colspan="2">Indian authors and delegates</th>
+                <th scope="col" colspan="2">Foreign authors and delegates</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td style="height:50px">Early Bird rates(Upto 5th January 2020)</td>
+                <td>Standard Rates(From 6th January 2020)</td>
+                <td>Early Bird rates(Upto 5th January 2020)</td>
+                <td>Standard Rates(From 6th January 2020)</td>
+            </tr>
+
+            <tr>
+                <td style: "width=250px">Industry Professionals</td>
+                <td>Rs 9000</td>
+                <td>Rs 10000</td>
+                <td>250$</td>
+                <td>300$</td>
+            </tr>
+
+            <tr>
+                <td style: "width=250px">Faculty / Academicians</td>
+                <td>Rs 7000</td>
+                <td>Rs 8000</td>
+                <td>200$</td>
+                <td>250$</td>
+            </tr>
+
+            <tr>
+                <td style: "width=250px">Faculty / Academicians (IEEE Members)</td>
+                <td>Rs 6000</td>
+                <td>Rs 7000</td>
+                <td>175$</td>
+                <td>225$</td>
+            </tr>
+
+            <tr>
+                <td style: "width=250px">Research Scholars, UG and PG Students</td>
+                <td>Rs 5000</td>
+                <td>Rs 6000</td>
+                <td>150$</td>
+                <td>200$</td>
+            </tr>
+
+            <tr>
+                <td style: "width=250px">Research Scholars, UG and PG Students (IEEE Members)</td>
+                <td>Rs 4000</td>
+                <td>Rs 5000</td>
+                <td>125$</td>
+                <td>175$</td>
+            </tr>
+
+            <tr>
+                <td style: "width=250px">VIT (internal)</td>
+                <td>Rs 3000</td>
+                <td>Rs 4000</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+
+            <tr>
+                <td style: "width=250px">Co-Authors / Participants (non-authors)</td>
+                <td>Rs 2000</td>
+                <td>Rs 3000</td>
+                <td>50$</td>
+                <td>100$</td>
+            </tr>
+
+        </table>
+        <br><br>
+        <div class="sponsors">
+            <br><br>
+            <h2 class="name-top">TECHNICAL CO-SPONSORS</h2>
+            <br><br>
+            <div class="top-images">
+                <img class="top-left" src="https://vit.ac.in/icetite/img/home/comosc%20madras%20logo.png">
+                <img class="top-right" src="https://vit.ac.in/icetite/img/home/mas_computer_logo.png">
+            </div>
+            <br>
+            <h2 class="name-top">SUPPORTED BY</h2>
+            <br><br>
+            <div class="bottom-images">
+                <img class="Img1" src="https://vit.ac.in/icetite/img/home/acm.png">
+                <img class="Img2" src="https://vit.ac.in/icetite/img/home/ias.png">
+                <img class="Img3" src="https://vit.ac.in/icetite/img/home/IEEE%20NPSS%20logo.png">
+            </div>
+            <br><br><br><br><br>
+        </div>
+        <div class="like">
+            <div class="ending">
+                <div class="text1">
+                    <h6>IC-ETITE'20</h6>
+                    <img src="https://vit.ac.in/icetite/img/icetite.png" class="ending-img" />
+
+                </div>
+                <div class="text2">
+                    <h6> ADDRESS</h6>
+                    <p><a href="https://vit.ac.in/" class="vellore"><strong>Vellore Institute of Technology,Vellore,Tamil Nadu,India,632014</strong></a></p>
+                </div>
+                <div class="text3">
+                    <h6><a href="https://vit.ac.in/icetite/Icetite'20.pdf" style="text-decoration: none" class="TAMIL"><b>DOWNLOAD BROCHURE</b></a></h6>
+                    <h6><a href="https://vit.ac.in/icetite/NOC_letter.pdf" style="text-decoration: none" class="INDIA"><b>DOWNLOAD MHA,INDIA-NOC</b></a></h6>
+                </div>
+            </div>
+            <br><br>
+            <hr style="color: grey;">
+            <br>
+    </center>
+    <div class="lowest">
+        <p class="reserve">Copyright ©2021 All rights reserved | ic-ETITE'20 </p>
+        <div class="social-media">
+            <a href="https://vit.ac.in/icetite/registration.html#" target="_blank"><img src="https://www.freeiconspng.com/thumbs/facebook-logo-png/facebook-logo-png-black-image--23.png" style="height:auto; width:60px; color: white" /></a>
+            <a href="https://vit.ac.in/icetite/registration.html#" target="_blank"><img src="https://smallimg.pngkey.com/png/small/84-842567_twitter-logo-black-and-white-png-twitter-logo.png" style="height:auto; width:40px; color: white" /></a>
+        </div>
+    </div>
+    </div>
+
+</body>
+
+</html>
